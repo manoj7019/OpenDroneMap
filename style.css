@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+}
+
+p {
+    line-height: 24px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+button {
+    border-radius: 32px;
+    padding: 12px 48px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+button.primary {
+    background: #ff0063;
+    border: 1px solid #ff0063;
+    color: white;
+}
+
+button.secondary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
+
+button.tertiary {
+    padding: 12px;
+    background: none;
+    color: white;
+    border: 1px solid #4dff56;
+}
+
+.text-highlight {
+    color: #ff0063;
+} 
+
+.special_number {
+    background: #4dff56;
+    border-radius: 12px;
+    padding: 4px 6px;
+}
+
+.arrow-button {
+    padding: 12px 16px;
+    border-radius: 50%;
+}
+
+.logo-small {
+    width: 32px;
+    height: auto;
+}
+
+.logo-medium {
+    width: 48px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.logo p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.icon {
+    height: 48px;
+    width: auto;
+}
+
+.icon-small {
+    height: 24px;
+    width: auto;
+}
+
+.icon-tiny {
+    height: 16px;
+    width: auto;
+}
+
+.big-text-para {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    margin: 32px;
+    background: rgba(255, 255, 255, 0.075);
+    border-radius: 16px;
+    top: 32px;
+    position: sticky;
+    backdrop-filter: blur(2rem);
+}
+
+nav a {
+    font-size: 14px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav div.menu-items {
+    gap: 32px;
+    margin-inline: 48px;
+}
+
+/* nav .logo p{
+    font-size: 18px;
+    font-weight: 700;
+} */
+
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    margin: 32px 96px;
+    padding: 128px;
+    background: url(./images/hero_bg.png);
+    border-radius: 32px;
+}
+
+.hero .buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/*Features */
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin: 96px;
+}
+
+.features-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    height: 600px;
+}
+
+.feature {
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.feature.one {
+    color: black;
+    background: url(/images/feature_1_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    grid-row-start: span 4;
+}
+.feature.two {
+    background: url(/images/feature_2_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    grid-row-start: span 2;
+}
+.feature.three {
+    background: url(/images/feature_3_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.feature.four {
+    background: url(/images/feature_5_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    grid-row-start: span 3;
+}
+.feature.five {
+    background: url(/images/feature_4_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    grid-row-start: span 2;
+}
+
+.features-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+/* Why Web ODM */
+.why-web-odm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 96px;
+    margin-bottom: 48px;
+}
+
+.why-web-odm .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.why-web-odm .card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.075);
+    border-radius: 16px;
+    height: min-content;
+}
+
+.why-web-odm .card img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* Our Users  */
+
+.our-users {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    padding-bottom: 32px;
+}
+
+.our-users img {
+    width: auto;
+    height: 64px;
+}
+
+/* User Reviews */
+.user-reviews {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 32px 64px;
+    margin: 96px;
+    border-radius: 32px;
+    margin-top: 0;
+    background: url(./images/Variant3_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.user-reviews img {
+    height: 400px;
+    width: auto;
+}
+
+.user-reviews .review {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.user-reviews .highlights {
+    display: flex;
+    gap: 16px;
+}
+
+/* How we can help */
+.how-we-can-help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 64px;
+    border-block: 1px solid transparent;
+    border-image: linear-gradient(to right, black, rgb(73, 0, 95), black);
+    border-image-slice: 1;
+}
+
+.how-we-can-help .selection {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.how-we-can-help select {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 48px;
+    border-radius: 48px;
+    background: none;
+    color: white;
+    transition: 0.4s;
+
+    appearance: none;
+    background-image: url(./images/select_dropArrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+    background-size: 12px auto;
+}
+
+/* Our valued contributors */
+.our-valued-contributors {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin: 48px 96px;
+    text-align: center;
+}
+
+.our-valued-contributors .head {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.our-valued-contributors .contributors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.our-valued-contributors .contributors .contributor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 24px;
+    background: linear-gradient(to right, rgba(194, 127, 214, 0.445), rgba(173, 64, 206, 0.39));
+    border-radius: 16px;
+}
+
+/* Get going */
+.get-going {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 64px;
+    border-block: 1px solid transparent;
+    border-image: linear-gradient(to right, black, rgb(73, 0, 95), black);
+    border-image-slice: 1;
+}
+
+/* Footer */
+.footer {
+    background: rgba(255, 255, 255, 0.075);
+    display: flex;
+    padding: 96px;
+    gap: 48px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.group.two {
+    display: flex;
+    flex-direction: column;
+}
+
+.group .documentation {
+    display: flex;
+    gap: 48px;
+    font-size: 12px;
+}
+
+.group .for-users,
+.group .for-developers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* Footer - Copy */
+.copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 96px;
+    background: rgba(255, 255, 255, 0.075);
+    border-top: 1px solid rgba(255, 255, 255, 0.192);
+}
+
+.copy .social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+} 

@@ -201,34 +201,34 @@ nav div.menu-items {
 
 .feature.one {
     color: black;
-    background: url(/images/feature_1_img.png);
+    background: url(./images/feature_1_img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
     grid-row-start: span 4;
 }
 .feature.two {
-    background: url(/images/feature_2_img.png);
+    background: url(./images/feature_2_img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
     grid-row-start: span 2;
 }
 .feature.three {
-    background: url(/images/feature_3_img.png);
+    background: url(./images/feature_3_img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .feature.four {
-    background: url(/images/feature_5_img.png);
+    background: url(./images/feature_5_img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
     grid-row-start: span 3;
 }
 .feature.five {
-    background: url(/images/feature_4_img.png);
+    background: url(./images/feature_4_img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 

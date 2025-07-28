@@ -168,6 +168,9 @@ nav div.menu-items {
     margin: 32px 96px;
     padding: 128px;
     background: url(./images/hero_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
     border-radius: 32px;
 }
 

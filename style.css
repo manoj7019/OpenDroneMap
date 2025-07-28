@@ -165,9 +165,13 @@ nav div.menu-items {
     align-items: center;
     text-align: center;
     gap: 24px;
-    margin: 32px 96px;
+    margin: 32px auto;
+    max-width: 1400px;
     padding: 128px;
     background: url(./images/hero_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
     border-radius: 32px;
 }
 
@@ -183,7 +187,8 @@ nav div.menu-items {
     flex-direction: column;
     align-items: center;
     gap: 48px;
-    margin: 96px;
+    margin: 64px auto;
+    max-width: 1400px;
 }
 
 .features-feature-grid {
@@ -248,7 +253,8 @@ nav div.menu-items {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    margin: 96px;
+    margin: 64px auto;
+    max-width: 1400px;
     margin-bottom: 48px;
 }
 
@@ -292,12 +298,13 @@ nav div.menu-items {
 /* User Reviews */
 .user-reviews {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 48px;
-    padding: 32px 64px;
-    margin: 96px;
+    margin: 64px auto;
+    padding: 32px 96px 32px 32px;
+    max-width: 1400px;
     border-radius: 32px;
-    margin-top: 0;
     background: url(./images/Variant3_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -326,6 +333,8 @@ nav div.menu-items {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    margin: 64px auto;
+    max-width: 1400px;
     padding: 64px;
     border-block: 1px solid transparent;
     border-image: linear-gradient(to right, black, rgb(73, 0, 95), black);
@@ -360,7 +369,8 @@ nav div.menu-items {
     flex-direction: column;
     gap: 24px;
     align-items: center;
-    margin: 48px 96px;
+    margin: 64px auto;
+    max-width: 1400px;
     text-align: center;
 }
 
@@ -396,6 +406,7 @@ nav div.menu-items {
     align-items: center;
     gap: 16px;
     margin: 0 auto;
+    max-width: 1400px;
     padding: 64px;
     border-block: 1px solid transparent;
     border-image: linear-gradient(to right, black, rgb(73, 0, 95), black);
@@ -406,6 +417,7 @@ nav div.menu-items {
 .footer {
     background: rgba(255, 255, 255, 0.075);
     display: flex;
+    justify-content: center;
     padding: 96px;
     gap: 48px;
 }

@@ -119,6 +119,11 @@ button.tertiary {
     width: auto;
 }
 
+.icon-tiniest {
+    height: 4px;
+    width: auto;
+}
+
 .big-text-para {
     font-size: 20px;
     line-height: 30px;
@@ -136,6 +141,7 @@ nav {
     top: 32px;
     position: sticky;
     backdrop-filter: blur(2rem);
+    z-index: 1000;
 }
 
 nav a {
@@ -165,7 +171,8 @@ nav div.menu-items {
     align-items: center;
     text-align: center;
     gap: 24px;
-    margin: 32px 96px;
+    margin: 32px auto;
+    width: 1200px;
     padding: 128px;
     background: url(./images/hero_bg.png);
     background-size: cover;
@@ -186,7 +193,8 @@ nav div.menu-items {
     flex-direction: column;
     align-items: center;
     gap: 48px;
-    margin: 96px;
+    margin: 32px auto;
+    width: 1200px;
 }
 
 .features-feature-grid {
@@ -210,6 +218,7 @@ nav div.menu-items {
     background-position: center center; 
     grid-row-start: span 4;
 }
+
 .feature.two {
     background: url(./images/feature_2_img.png);
     background-size: cover;
@@ -232,10 +241,13 @@ nav div.menu-items {
 }
 .feature.five {
     background: url(./images/feature_4_img.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
     grid-row-start: span 2;
+}
+.feature:hover {
+    background-size: 120%;
 }
 
 .features-buttons {
@@ -251,7 +263,8 @@ nav div.menu-items {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    margin: 96px;
+    margin: 32px auto;
+    width: 1200px;
     margin-bottom: 48px;
 }
 
@@ -285,6 +298,8 @@ nav div.menu-items {
     align-items: center;
     padding: 64px;
     padding-bottom: 32px;
+    margin: 32px auto;
+    width: 1200px;
 }
 
 .our-users img {
@@ -298,7 +313,8 @@ nav div.menu-items {
     align-items: center;
     gap: 48px;
     padding: 32px 64px;
-    margin: 96px;
+    margin: 32px auto;
+    width: 1200px;
     border-radius: 32px;
     margin-top: 0;
     background: url(./images/Variant3_bg.png);
@@ -333,6 +349,8 @@ nav div.menu-items {
     border-block: 1px solid transparent;
     border-image: linear-gradient(to right, black, rgb(73, 0, 95), black);
     border-image-slice: 1;
+    margin: 48px auto;
+    width: 1200px;
 }
 
 .how-we-can-help .selection {
@@ -363,7 +381,8 @@ nav div.menu-items {
     flex-direction: column;
     gap: 24px;
     align-items: center;
-    margin: 48px 96px;
+    margin: 64px auto;
+    width: 1200px;
     text-align: center;
 }
 
@@ -380,16 +399,26 @@ nav div.menu-items {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    width: 100%;
 }
 
 .our-valued-contributors .contributors .contributor {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 16px;
     gap: 8px;
-    padding: 16px 24px;
+    padding: 24px 32px;
     background: linear-gradient(to right, rgba(194, 127, 214, 0.445), rgba(173, 64, 206, 0.39));
+    backdrop-filter: blur(5rem);
     border-radius: 16px;
+}
+.our-valued-contributors .contributors .contributor:hover {
+    background: url(./images/Rectangle_gradient.png);
+    backdrop-filter: blur(5rem);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 180px;
 }
 
 /* Get going */
@@ -409,6 +438,7 @@ nav div.menu-items {
 .footer {
     background: rgba(255, 255, 255, 0.075);
     display: flex;
+    justify-content: center;
     padding: 96px;
     gap: 48px;
 }
@@ -453,3 +483,109 @@ nav div.menu-items {
     align-items: center;
     gap: 16px;
 } 
+
+/* PRODUCTS PAGE */
+
+.products-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 96px auto;
+}
+
+/* System Requirements  */
+.system-requirements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 1200px;
+    margin: 48px auto;
+    gap: 32px;
+}
+
+.system-requirements .requirement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 16px;
+    border: 1px solid rgb(255, 255, 255,0.2);
+    margin: 8px 0;
+    border-radius: 16px;
+}
+
+/* FAQ  */
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    /* max-width: 900px; */
+    margin: 0 auto;
+    width: 1200px;
+    padding: 64px 0;
+    color: white;
+}
+
+.faq-questions-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+    gap: 16px;
+}
+
+#accordion {
+    /* margin: 100px auto; */
+    width: 800px;
+    padding: 32px;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+#accordion li label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    gap: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#accordion li label:hover {
+    transform: scale(1.025);
+}
+
+#accordion li div p{
+    color: rgb(173, 173, 173);
+}
+
+#accordion label + input[type="radio"] {
+    display: none;
+}
+
+#accordion .answer {
+    /* padding: 5px 0; */
+    line-height: 24px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .answer {
+    height: 72px;
+}
+
+#accordion label + input[type="radio"]:checked label {
+    display: none;
+}
